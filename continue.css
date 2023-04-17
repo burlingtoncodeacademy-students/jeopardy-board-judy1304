@@ -1,4 +1,6 @@
-.header1 {
+ /* For backgound page header section */ 
+
+.header2 {
     background-color: blueviolet;
     text-align: center;
     align-items: center;
@@ -14,13 +16,15 @@ h1 {
     top: 300px;
 }
 
+/* background page  */
+
 body, html {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0 20px;
 }
 
-.container2 { 
+.container3 { 
     display: flex;
     margin-left: 45.7%;
     margin-top: 5%;
@@ -37,7 +41,7 @@ h3 {
 }
 
 
-
+/* Input User */
 
 label {
     display: block;
@@ -47,12 +51,14 @@ label {
     
 }
 
+/* Button Input */
 input, label {
     margin: 0.5rem auto;
     width: 250px;
     font-size: 2rem;
 }
 
+/* table-bordedred section */
 .table {
     font-size: 2rem;
     margin: auto;
@@ -63,16 +69,21 @@ input, label {
     
 }
 
+/* catergoies */
+
 th, .col {
     font-size: 4rem;
     color:white;
 }
+
+/* font color and size */
 
 td {
     color:deepskyblue;
     font-size: 2rem;
 }
 
+/* for guess button  */
 .guess {
     border: 0;
     color:white;
@@ -86,6 +97,7 @@ td {
 
 }
 
+/* for pass button */
 .pass {
     border: 0;
     color:white;
@@ -98,6 +110,7 @@ td {
     margin-top: 1%;
 }
 
+/* For player 1 score */
 .left {
     text-align: left;
     font-size: 2rem;
@@ -106,6 +119,7 @@ td {
     left: 90px;
 }
 
+/* For player 2 score */
 .right {
     text-align: right;
     font-size: 2rem;
@@ -114,6 +128,7 @@ td {
     right: 90px;
 }
 
+/* Next round button */
 a {
     text-decoration: none;
     outline: none;
@@ -145,6 +160,7 @@ a:active {
     color: black;
 }
 
+/* For bottom page */
 .footer {
     display: block;
     text-align: center;
