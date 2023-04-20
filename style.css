@@ -110,5 +110,8 @@ a:active {
 /* Set footer properties */
 .footer {
     text-align: center;
-    background-color: oldlace
+    background-color: oldlace;
+    bottom: 0;
+    color: orange;
+
 }

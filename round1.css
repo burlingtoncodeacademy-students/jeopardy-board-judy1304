@@ -1,42 +1,66 @@
 /* For backgound page header section */
 
-
 .header1 {
     background-color: blueviolet;
+    height: 100px;
     text-align: center;
     align-items: center;
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-
-}
-
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    top: 300px;
-}
-
-/* background page  */
-
-body,
-html {
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 0 20px;
-    text-align: center;
-    justify-content: center;
-
 }
 
 
-.container2 {
+.container4 {
     display: flex;
     margin-left: 45.7%;
     margin-top: 5%;
 
 }
 
+#game-board {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 60px;
+    font-size: 35px;
+    height: 90px;
+    -ms-layout-grid: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 7rem;
+}
+
+.questions {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 90px;
+}
 
 
 h3 {
@@ -48,38 +72,13 @@ h3 {
 
 
 
-#nature-list:hover {
+.questions:hover {
     cursor: pointer;
     background-color: #d89b20;
 }
 
-#animals-list:hover {
-    cursor: pointer;
-    background-color: #d89b20
-}
 
-#computers-list:hover {
-    cursor: pointer;
-    background-color: #d89b20;
 
-}
-
-#mythology-list:hover {
-    cursor: pointer;
-    background-color: #d89b20;
-
-}
-
-#history-list:hover {
-    cursor: pointer;
-    background-color: #d89b20;
-
-}
-
-#general-list:hover {
-    cursor: pointer;
-    background-color: #d89b20;
-}
 
 /* Input User */
 
@@ -96,53 +95,11 @@ label {
 input,
 label {
     margin: 0.5rem auto;
-    width: 250px;
+    width: 300px;
+    height: 50px;
     font-size: 1rem;
 }
 
-/* table-bordered */
-/* .table {
-    font-size: 2rem;
-    margin: auto;
-    border: 2px solid yellow;
-    width: 400px;
-    height: 100px;
-    padding: 50px;
-    justify-content: center;
-    text-align: center;
-
-} */
-
-#game-board {
-    margin: 0;
-    width: 500px;
-}
-
-#questions-table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    border: 1px solid white;
-    padding: 10px;
-    ;
-}
-
-/* catergoies  */
-th,
-.col {
-    font-size: 4rem;
-    background-color: blue;
-}
-
-/* numbers font color and size
-td {
-    color: deepskyblue;
-    font-size: 2rem;
-} */
 
 
 /* Guess Button input style */
@@ -177,8 +134,9 @@ td {
     text-align: left;
     font-size: 2rem;
     position: absolute;
-    top: 870px;
+    top: 1250px;
     left: 90px;
+
 }
 
 /* for the Player 2 secore */
@@ -186,7 +144,7 @@ td {
     text-align: right;
     font-size: 2rem;
     position: absolute;
-    top: 870px;
+    top: 1250px;
     right: 90px;
 }
 
@@ -201,8 +159,8 @@ a {
     width: 15%;
     padding: 3px 7px;
     position: absolute;
-    top: 1000px;
-    right: 80px;
+    top: 1490px;
+    right: 50px;
     margin-right: 10%;
 
 
@@ -226,12 +184,22 @@ a:active {
 
 
 /* bottom page  */
-.footer {
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: orange;
+    color: white;
     text-align: center;
-    background-color: oldlace;
+    align-items: center;
     display: flex;
+    justify-content: center;
     font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 500px;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -255,16 +223,17 @@ a:active {
     /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/* Modal Content/Box
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
-    padding: 20px;
+/* padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
-}
+    width: 80%; */
+/* Could be more or less, depending on screen size */
+/* } */
+*/
 
 /* The Close Button */
 .close {
