@@ -3,6 +3,7 @@ root {
     --primaryHover: rgb(37, 181, 8);
 }
 
+
 body {
     background-color: rgb(237, 195, 187);
     margin: 0;
@@ -10,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 /* style for the header section */
 
@@ -29,17 +31,6 @@ body {
 
 } */
 
-@media (max-width: 768px) .intro-screenshot {
-    margin-top: 0px;
-}
-
-@media (max-width: 768px) .left,
-.right,
-#Round1 {
-    width: 100%;
-    float: none;
-}
-
 /* Set image properties */
 .img-fluild {
     max-width: 100%;
@@ -54,6 +45,8 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+
 
 /* href for play button  */
 /* a {
@@ -71,12 +64,13 @@ body {
 
 /* Set container1 properties for Play Button */
 .container1 {
-    width: 7vw;
+    width: 10vw;
     height: 50vh;
-    align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 520px;
+    margin-left: 650px;
+    text-align: center;
+
 }
 
 /* Set anchor properties */
@@ -110,5 +104,15 @@ a:active {
 /* Set footer properties */
 .footer {
     text-align: center;
-    background-color: oldlace
+    background-color: oldlace;
+    bottom: 0;
+    color: orange;
+
+}
+
+/* Media query for small screens */
+@media screen and (min-width: 600px) {
+    .header {
+        font-size: clamp(2rem, 6vw);
+    }
 }

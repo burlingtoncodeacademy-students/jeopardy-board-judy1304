@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeopardy</title>
+  <link rel="stylesheet" href="round2.css" />
+</head>
+
+<body class="header1">
+  <h1>Round Two</h1>
+
+  <h3>Player Turn</h3>
+
+  <!--create a table for jeopard game -->
+  <div id="game-board">
+    <div id="nature-title" class="category-column">Nature</div>
+    <div id="animals-title" class="category-column">Animals</div>
+    <div id="computers-title" class="category-column">Computers</div>
+    <div id="mythology-title" class="category-colmun">Mythology</div>
+    <div id="history-title" class="category-column">History</div>
+    <div id="general-title" class="category-colmun">General</div>
+  </div>
+    <!-- this is for the column categories -->
+    <div class="row">
+      <div id="nature-list"  class="questions">200</div>
+      <div id="animals-list" class="questions">200</div>
+      <div id="computers-list" class="questions">200</div>
+      <div id="mythology-list" class="questions">200</div>
+      <div id="history-list" class="questions">200</div>
+      <div id="general-list" class="questions">200</div>
+  
+    </div>
+    <div class="row">
+      <div id="nature-list"  class="questions">300</div>
+      <div id="animals-list" class="questions">300</div>
+      <div id="computers-list" class="questions">300</div>
+      <div id="mythology-list" class="questions">300</div>
+      <div id="history-list" class="questions">300</div>
+      <div id="general-list" class="questions">300</div>
+    </div>
+    <div class="row">
+      <div id="nature-list" class="questions">400</div>
+      <div id="animals-list" class="questions">400</div>
+      <div id="computers-list" class="questions">400</div>
+      <div id="mythology-list" class="questions">400</div>
+      <div id="history-list" class="questions">400</div>
+      <div id="general-list" class="questions">400</div>
+    </div>
+    <div class="row">
+      <div id="nature-list" class="questions">500</div>
+      <div id="animals-list" class="questions">500</div>
+      <div id="computers-list" class="questions">500</div>
+      <div id="mythology-list" class="questions">500</div>
+      <div id="history-list" class="questions">500</div>
+      <div id="general-list" class="questions">500</div>
+    </div>
+    <div class="row">
+      <div id="nature-list" class="questions">600</div>
+      <div id="animals-list" class="questions">600</div>
+      <div id="computers-list" class="questions">600</div>
+      <div id="mythology-list"class="questions">600</div>
+      <div id="history-list" class="questions">600</div>
+      <div id="general-list" class="questions">600</div>
+    </div>
+
+
+
+
+  <!-- The Jeopardy Modal -->
+  <div id="myModal" class="modal" label="prompt" modal="true">
+
+    <!-- Modal content
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div> -->
+
+  </div>
+  <!--Input User-->
+  <label for="user"></label>
+  <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
+
+  <!--Button input-->
+  <section>
+    <button id="guessButton" class="guess" type="button" onclick="checkAnswer()">Guess</button>
+    <button id="passButton" class="pass" type="button" onclick="pass()">Pass</button>
+  </section>
+
+  <section>
+    <p class="left">
+      Player 1 Score: 0 <span id="player1Score"></span>
+    </p>
+
+  </section>
+
+  <section>
+    <p class="right">
+      Player 2 Score: 0 <span id="player2Score"></span>
+    </p>
+  </section>
+
+  <section>
+    <nav id="round2" class="container4">
+      <a href="final-jeopardy.html">Next<br>Round</a>
+    </nav>
+  </section>
+
+  <footer>
+    <div id="footer">Jeopardy Game Show</div>
+  </footer>
+
+
+
+  <!-- Do not change the script source. Allows import/export to work. -->
+  <script src="./scripts/round2.js" type="module"></script>
+
+
+</body>
+
+</body>
+
+</html>

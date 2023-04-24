@@ -1,12 +1,12 @@
 .root {
-    background-color:var(--primaryHover); 
+    background-color: var(--primaryHover);
 }
 
 /* background color */
 
 body {
     background-color: blueviolet;
-    
+
 }
 
 /* The header section */
@@ -21,17 +21,18 @@ h1 {
     padding: 2px;
 
 }
+
 /* For Player Turn */
 h3 {
     color: pink;
     text-align: center;
     font-size: 4rem;
-    width:600px;
+    width: 600px;
     margin: auto;
     margin-top: 20px;
 }
 
-.container3 { 
+.container3 {
     display: flex;
     margin-left: 45.7%;
     margin-top: 5%;
@@ -40,7 +41,7 @@ h3 {
 /* The final question part */
 .final {
     border: 0;
-    color:white;
+    color: white;
     font-size: 2rem;
     line-height: 2;
     border-radius: 15px;
@@ -52,6 +53,7 @@ h3 {
     margin-left: 30%;
     cursor: pointer;
 }
+
 /* Final Question section */
 .div1 {
     border: 3px solid darkorange;
@@ -73,11 +75,12 @@ label {
     color: white;
     margin-top: 40%;
     margin-left: 40%;
-    
+
 }
 
 /* labe for user */
-input, label {
+input,
+label {
     margin: 0.5rem auto;
     width: 250px;
     font-size: 2rem;
@@ -87,8 +90,8 @@ input, label {
 /* bet button  */
 
 .bet {
-border: 0;
-    color:white;
+    border: 0;
+    color: white;
     font-size: 2rem;
     line-height: 2;
     border-radius: 15px;
@@ -110,7 +113,7 @@ border: 0;
     font-size: 1rem;
     border: 0.5rem outset blue;
     border-radius: 2px;
-    width:600px;
+    width: 600px;
     padding: 2px;
     margin-left: 30%;
 
