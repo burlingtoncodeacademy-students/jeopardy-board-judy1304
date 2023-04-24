@@ -14,84 +14,94 @@
 
   <h3>Player Turn</h3>
 
-  <!--create a table for jeopard game-->
-  <div id="game-board">
-    <!--this is for the column categories -->
-    <div id="nature-title" class="category-column">Nature</div>
-    <div id="animals-title" class="category-column">Animals</div>
-    <div id="computers-title" class="category-column">Computers</div>
-    <div id="mythology-title" class="category-colmun">Mythology</div>
-    <div id="history-title" class="category-column">History</div>
-    <div id="general-title" class="category-colmun">General</div>
+    <!--Table 6 by 6-->
+<div id="game-board">
+    <table id="questions-tables" class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="category" id="nature-title" scope="col">Nature</th>
+          <th class="category" id="animals-title" scope="col">Animals</th>
+          <th class="category" id="computers-title" scope="col">Computers</th>
+          <th class="category" id="mythology-title" scope="col">Mythology</th>
+          <th class="category" id="history-title" scope="col">History</th>
+          <th class="category" id="general-title" scope="col">General</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">100</td>
+          <td id="animals-list" class="animals">100</td>
+          <td id="computers-list" class="computers">100</td>
+          <td id="mythology-list" class="mythology">100</td>
+          <td id="history-list" class="history">100</td>
+          <td id="general-list" class="general">100</td>
+        </t>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">200</td>
+          <td id="animals-list" class="animals">200</td>
+          <td id="computers-list" class="computers">200</td>
+          <td id="mythology-list" class="mythology">200</td>
+          <td id="history-list" class="history">200</td>
+          <td id="general-list" class="general">200</td>
+        </tr>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">300</td>
+          <td id="animals-list" class="animals">300</td>
+          <td id="computers-list" class="computers">300</td>
+          <td id="mythology-list" class="mythology">300</td>
+          <td id="history-list" class="history">300</td>
+          <td id="general-list" class="general">300</td>
+        </tr>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">400</td>
+          <td id="animals-list" class="animals">400</td>
+          <td id="computers-list" class="computers">400</td>
+          <td id="mythology-list" class="mythology">400</td>
+          <td id="history-list" class="history">400</td>
+          <td id="general-list" class="general">400</td>
+        </tr>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">500</td>
+          <td id="animals-list" class="animals">500</td>
+          <td id="computers-list" class="computers">500</td>
+          <td id="mythology-list" class="mythology">500</td>
+          <td id="history-list" class="history">500</td>
+          <td id="general-list" class="general">500</td>               
+        </tr>
+        <tr class="jeopardy-card">
+          <td id="nature-list"  class="nature">600</td>
+          <td id="animals-list" class="animals">600</td>
+          <td id="computers-list" class="computers">600</td>
+          <td id="mythology-list" class="mythology">600</td>
+          <td id="history-list" class="history">600</td>
+          <td id="general-list" class="general">600</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
   </div>
 
-
-  <!-- the rows are for the questions behind the points -->
-  <div class="row">
-    <div id="nature-list"  class="questions">200</div>
-    <div id="animals-list" class="questions">200</div>
-    <div id="computers-list" class="questions">200</div>
-    <div id="mythology-list" class="questions">200</div>
-    <div id="history-list" class="questions">200</div>
-    <div id="general-list" class="questions">200</div>
-
-  </div>
-  <div class="row">
-    <div id="nature-list"  class="questions">400</div>
-    <div id="animals-list" class="questions">400</div>
-    <div id="computers-list" class="questions">400</div>
-    <div id="mythology-list" class="questions">400</div>
-    <div id="history-list" class="questions">400</div>
-    <div id="general-list" class="questions">400</div>
-  </div>
-  <div class="row">
-    <div id="nature-list" class="questions">600</div>
-    <div id="animals-list" class="questions">600</div>
-    <div id="computers-list" class="questions">600</div>
-    <div id="mythology-list" class="questions">600</div>
-    <div id="history-list" class="questions">600</div>
-    <div id="general-list" class="questions">600</div>
-  </div>
-  <div class="row">
-    <div id="nature-list" class="questions">800</div>
-    <div id="animals-list" class="questions">800</div>
-    <div id="computers-list" class="questions">800</div>
-    <div id="mythology-list" class="questions">800</div>
-    <div id="history-list" class="questions">800</div>
-    <div id="general-list" class="questions">800</div>
-  </div>
-  <div class="row">
-    <div id="nature-list" class="questions">1000</div>
-    <div id="animals-list" class="questions">1000</div>
-    <div id="computers-list" class="questions">1000</div>
-    <div id="mythology-list"class="questions">1000</div>
-    <div id="history-list" class="questions">1000</div>
-    <div id="general-list" class="questions">1000</div>
-  </div>
-  
-
-  <!-- The Jeopardy Modal -->
-  <div id="myModal" class="modal" label="prompt" modal="true">
-    <h1><span class="player-turn-modal">Player 1</span></h1>
-  </div>
-  <div class="game-question">
-    <p class="game-question-pop"> Some text in the Modal..
-    </p>
-  </div>
-  <!--Input User-->
-  <label for="user"></label>
-  <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
-
-  <!--Button input -->
-  <section>
-    <button id="guessButton" class="guess" type="button" onclick="checkAnswer()">Guess</button>
-  
-    <button id="passButton" class="pass" type="button" onclick="pass()">Pass</button>
- 
+</div>
+    <!--Input User-->
+    <label for="user"></label>
+    <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
     
-    </div>
-    </div>
-  </section>
+   <!--Button input--> 
+   <section>
+     <button id="guessButton"class="guess" type="button">Guess</button>
+     <button id="passButton" class="pass" type="button">Pass</button>
+   </section>
 
 
   <!-- Points for each players to keep track of while playing each around -->
@@ -122,12 +132,13 @@
 
 
 
-  <!-- Do not change the script source. Allows import/export to work. -->
-  <script src="./scripts/round1.js" type="module"></script>
-<script src="./scripts/placeholder-questions.js" type="modu
-"></script>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/round1.js" type="module"></script>
+   
+   <!-- Bootstrap Reference-->
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 
 </body>
 

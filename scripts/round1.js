@@ -3,7 +3,72 @@ import placeholderQuestions from "./placeholder-questions.js";
 console.log({ placeholderQuestions });
 
 
-// this is for fishing 5 questions for each categories import from placeholders
+// Fetch placeholder questions from an external source
+let fetchPlaceholderQuestions = async () => {
+    try {
+        // Use fetch to make a GET request to the API endpoint
+        let response = await fetch("./placeholder-questions.js");
+        // Check if the response is successful
+        if (!response.ok) {
+            throw new Error('Error fetching questions');
+        }
+
+        // Parse the response into JSON
+        let questions = await response.json();
+
+        // Do whatever you need to do with the questions data
+        let allQuestions = allQuestions.results;
+        displayQuestions(allQuestions);
+        console.log(allQuestions.results[0].category);
+        questions.push(questions.value);
+        clearDisplay();
+        displayQuestions();
+
+    } catch (error) {
+        // Handle any errors that occur during the fetch operation
+        console.error(error);
+    }
+};
+
+
+
+// Populate game board with fetched questions and answers
+function displayQuestions(categoriesToDisplay) {
+    for (let i = 0; i < categories.length; i++) {
+        let gameBoardDisplay = document.getElementById('game-board');
+        categoriesToDisplay.forEach((category) => {
+            console.log(category);
+            // let pTag = document.createElement("p");
+            // pTag.textContent = category.name;
+            // gameBoardDisplay.appendChild(pTag);
+        });
+    }
+}
+
+
+for (let j = 0; j < answer.length; j++) {
+    let answerDiv = document.getElementById('div');
+    answerDiv.forEach((answer) => {
+        answerDiv.textContent = answer[i];
+        console.log(answer);
+    })
+
+    // gameBoardDisplay.appendChild(answerDiv);
+
+}
+
+
+
+// Add event listeners to handle user interactions
+const questionTiles = document.getElementsByClassName('question');
+for (let i = 0; i < questionTiles.length; i++) {
+    questionTiles[i].addEventListener('click', () => {
+
+    });
+}
+
+
+
 let getNature = placeholderQuestions.filter((cat) => cat.category === "Nature").slice(5);
 let getAnimals = placeholderQuestions.filter((cat) => cat.category === "Animals").slice(5);
 let getComputers = placeholderQuestions.filter((cat) => cat.category === "Computers").slice(5);
@@ -33,33 +98,28 @@ function populateCategory(
     });
 }
 
-function popModal(questionData, index) {
-    if (questionData.questionList.contains("chosen")) {
-        alert("Sorry, please choose another question.")
-        return;
-    }
+// Get the modal
+var modal = document.getElementById("myModal");
 
-    questionData.questionList.add("chosen");
-    questionData.style.color = "#wine"
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-    gameQuestionObject = newObject(question, index)
-    console.log(gameQuestionObject);
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-    document.querySelector(".game-question-pop").textContent = gameQuestionObject.question;
-
-    document.querySelector(".player-turn-modal").textContent = gameQuestionObject.playerTurn;
-
-    Modal.style.display = "table";
-
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100%";
-
-
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
 }
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
 
-
-
-
-
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

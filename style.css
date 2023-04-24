@@ -104,15 +104,5 @@ a:active {
 /* Set footer properties */
 .footer {
     text-align: center;
-    background-color: oldlace;
-    bottom: 0;
-    color: orange;
-
-}
-
-/* Media query for small screens */
-@media screen and (min-width: 600px) {
-    .header {
-        font-size: clamp(2rem, 6vw);
-    }
+    background-color: oldlace
 }
