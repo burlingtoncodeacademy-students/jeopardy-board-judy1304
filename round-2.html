@@ -11,79 +11,65 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="continue.css" />
+    <link rel="stylesheet" href="round2.css" />
   </head>
   <body>
     <body class="header2">
       <h1>Round Two</h1>
 
       <h3>Player Turn</h3>
+      <!--create a table for jeopard game-->
+      <div id="game-board">
+        <!--this is for the column categories -->
+        <div id="nature-title" class="category-column">Nature</div>
+        <div id="animals-title" class="category-column">Animals</div>
+        <div id="computers-title" class="category-column">Computers</div>
+        <div id="mythology-title" class="category-colmun">Mythology</div>
+        <div id="history-title" class="category-column">History</div>
+        <div id="general-title" class="category-colmun">General</div>
+      </div>
 
-      <!--Table 6 by 6-->
-
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Art</th>
-            <th scope="col">Science</th>
-            <th scope="col">History</th>
-            <th scope="col">Sports</th>
-            <th scope="col">Movie</th>
-            <th scope="col">Geography</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-          </tr>
-          <tr>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-          </tr>
-          <tr>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
-          </tr>
-        </tbody>
-      </table>
-
+      <!-- the rows are for the questions behind the points -->
+      <div class="row">
+        <div id="nature-list" class="questions">200</div>
+        <div id="animals-list" class="questions">200</div>
+        <div id="computers-list" class="questions">200</div>
+        <div id="mythology-list" class="questions">200</div>
+        <div id="history-list" class="questions">200</div>
+        <div id="general-list" class="questions">200</div>
+      </div>
+      <div class="row">
+        <div id="nature-list" class="questions">400</div>
+        <div id="animals-list" class="questions">400</div>
+        <div id="computers-list" class="questions">400</div>
+        <div id="mythology-list" class="questions">400</div>
+        <div id="history-list" class="questions">400</div>
+        <div id="general-list" class="questions">400</div>
+      </div>
+      <div class="row">
+        <div id="nature-list" class="questions">600</div>
+        <div id="animals-list" class="questions">600</div>
+        <div id="computers-list" class="questions">600</div>
+        <div id="mythology-list" class="questions">600</div>
+        <div id="history-list" class="questions">600</div>
+        <div id="general-list" class="questions">600</div>
+      </div>
+      <div class="row">
+        <div id="nature-list" class="questions">800</div>
+        <div id="animals-list" class="questions">800</div>
+        <div id="computers-list" class="questions">800</div>
+        <div id="mythology-list" class="questions">800</div>
+        <div id="history-list" class="questions">800</div>
+        <div id="general-list" class="questions">800</div>
+      </div>
+      <div class="row">
+        <div id="nature-list" class="questions">1000</div>
+        <div id="animals-list" class="questions">1000</div>
+        <div id="computers-list" class="questions">1000</div>
+        <div id="mythology-list" class="questions">1000</div>
+        <div id="history-list" class="questions">1000</div>
+        <div id="general-list" class="questions">1000</div>
+      </div>
       <!--Input User-->
       <label for="user"></label>
       <input type="text" id="answer" name="answer" />
