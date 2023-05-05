@@ -1,0 +1,212 @@
+/* For backgound page header section */
+
+.header1 {
+    background-color: blueviolet;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* the subtitle for player turn */
+h3 {
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(12, 79, 142);
+}
+
+/* For next round to continue the game */
+.container4 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 90px;
+}
+
+/* This is for the design of the board */
+
+
+#game-board {
+    width: 440px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 60px;
+    font-size: 35px;
+    height: 90px;
+    -ms-layout-grid: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 1rem;
+}
+
+.questions {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.questions:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+
+#game-board {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 60px;
+    font-size: 35px;
+    height: 90px;
+    -ms-layout-grid: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 7rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 90px;
+}
+
+
+/* Input User */
+
+label {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-top: 20%;
+
+}
+
+/* Input user */
+
+input,
+label {
+    margin: 0.5rem auto;
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+
+
+/* Guess Button input style */
+.guess {
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    line-height: 2;
+    border-radius: 15px;
+    background-color: lightseagreen;
+    background-image: -moz-linear-gradient(to top left);
+    box-shadow: 1px;
+    margin-top: 1%;
+
+}
+
+/* Pass Button input style  */
+.pass {
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    line-height: 2;
+    border-radius: 15px;
+    background-color: lightseagreen;
+    background-image: -moz-linear-gradient(to top left);
+    box-shadow: 1px;
+    margin-top: 1%;
+}
+
+/* for the Player 1 score  */
+.left {
+    text-align: left;
+    font-size: 2rem;
+    position: absolute;
+    top: 850px;
+    left: 90px;
+
+}
+
+/* for the Player 2 secore */
+.right {
+    text-align: right;
+    font-size: 2rem;
+    position: absolute;
+    top: 850px;
+    right: 90px;
+}
+
+/* for the next round button */
+a {
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--primaryHover);
+    cursor: pointer;
+    width: 120px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 950px;
+    right: 150px;
+    margin-right: auto 50px;
+
+
+}
+
+a:link,
+a:visited,
+a:focus {
+    background-color: green;
+    color: blue;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+a:active {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+
+/* bottom page  */
+#footer {
+    background: orange;
+    color: white;
+    padding: 0 20px;
+    bottom: fixed;
+    font-size: 15px;
+}

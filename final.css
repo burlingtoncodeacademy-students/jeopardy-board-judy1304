@@ -6,6 +6,7 @@
 
 body {
     background-color: blueviolet;
+    min-height: 100%;
 
 }
 
@@ -26,7 +27,7 @@ h1 {
 h3 {
     color: pink;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 600px;
     margin: auto;
     margin-top: 20px;
@@ -44,7 +45,7 @@ h3 {
     color: white;
     font-size: 2rem;
     line-height: 2;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: lightseagreen;
     background-image: -moz-linear-gradient(to top left);
     box-shadow: 1px;
@@ -59,7 +60,7 @@ h3 {
     border: 3px solid darkorange;
     height: 100px;
     width: 500px;
-    padding: 60px;
+    padding: 50px;
     text-align: center;
     font-size: 4rem;
     margin: auto;
@@ -93,8 +94,8 @@ label {
     border: 0;
     color: white;
     font-size: 2rem;
-    line-height: 2;
-    border-radius: 15px;
+    line-height: 1;
+    border-radius: 5px;
     background-color: lightseagreen;
     background-image: -moz-linear-gradient(to top left);
     box-shadow: 1px;
@@ -105,16 +106,13 @@ label {
 }
 
 /* footer on the bottom of the page */
-.footer {
-    display: block;
+p.footer {
+    background: orange;
+    color: white;
+    font-size: 20px;
+    margin: auto;
     text-align: center;
-    align-items: center;
-    margin-top: 25%;
-    font-size: 1rem;
-    border: 0.5rem outset blue;
-    border-radius: 2px;
-    width: 600px;
-    padding: 2px;
-    margin-left: 30%;
-
+    bottom: fixed;
+    bottom: 0px;
+    top: 500px;
 }

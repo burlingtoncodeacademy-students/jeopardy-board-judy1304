@@ -10,60 +10,7 @@
     color: white;
 }
 
-
-.container4 {
-    display: flex;
-    margin-left: 40px;
-    margin-top: 10px;
-
-}
-
-
-#game-board {
-    width: 450px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 60px;
-    font-size: 35px;
-    height: 90px;
-    -ms-layout-grid: auto;
-    text-align: center;
-    border-collapse: collapse;
-    margin-left: 7rem;
-}
-
-
-
-.questions {
-    background-color: #d89b20;
-    width: 150px;
-    height: 70px;
-    background-color: rgb(71, 32, 198);
-    border-left: solid #aaa 5px;
-    border-right: solid #efb5e7 5px;
-    border-top: solid #efb5ef 5px;
-    border-bottom: solid #aaa 5px;
-    text-align: center;
-    font-size: 40px;
-    margin: auto;
-    padding: 0px;
-    line-height: 100px;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-    grid-gap: 5px;
-    text-align: center;
-    justify-content: center;
-
-}
-
-
-
-
-.row {}
-
-
+/* For display for next round */
 .container4 {
     display: flex;
     flex-direction: row;
@@ -84,6 +31,8 @@
     margin-left: 7rem;
 }
 
+
+/* The questions board */
 .questions {
     background-color: #d89b20;
     width: 150px;
@@ -104,7 +53,27 @@
     grid-gap: 5px;
     text-align: center;
     justify-content: center;
+}
 
+.questions:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+
+/* For the table */
+#game-board {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 60px;
+    font-size: 35px;
+    height: 90px;
+    -ms-layout-grid: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 7rem;
 }
 
 
@@ -120,16 +89,6 @@ h3 {
     font-size: 2rem;
     color: rgb(12, 79, 142);
 }
-
-
-
-.questions:hover {
-    cursor: pointer;
-    background-color: #d89b20;
-}
-
-
-
 
 /* Input User */
 
@@ -185,7 +144,7 @@ label {
     text-align: left;
     font-size: 2rem;
     position: absolute;
-    top: 1250px;
+    top: 850px;
     left: 90px;
 
 }
@@ -195,7 +154,7 @@ label {
     text-align: right;
     font-size: 2rem;
     position: absolute;
-    top: 1250px;
+    top: 850px;
     right: 90px;
 }
 
@@ -207,12 +166,12 @@ a {
     font-size: 2rem;
     background-color: var(--primaryHover);
     cursor: pointer;
-    width: 15%;
-    padding: 3px 7px;
+    width: 120px;
+    padding: 2px 5px;
+    top: 950px;
+    right: 150px;
+    margin-right: auto 50px;
     position: absolute;
-    top: 1490px;
-    right: 50px;
-    margin-right: 10%;
 
 
 }
@@ -228,83 +187,11 @@ a:hover {
     background-color: yellow;
 }
 
-a:active {
-    background-color: cornflowerblue;
-    color: black;
-}
-
-
-/* bottom page  */
+/* footer page  */
 #footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: orange;
+    background: orange;
     color: white;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    top: 500px;
-}
-
-
-/* The Modal (background)
-.modal {
-    display: none;
-    /* Hidden by default */
-position: fixed;
-/* Stay in place */
-z-index: 1;
-/* Sit on top */
-left: 0;
-top: 0;
-width: 100%;
-height: 60px;
-background-color: orange;
-color: white;
-text-align: center;
-align-items: center;
-display: flex;
-justify-content: center;
-font-size: 1rem;
-font-family: 'Lucida Sans',
-'Lucida Sans Regular',
-'Lucida Grande',
-'Lucida Sans Unicode',
-Geneva,
-Verdana,
-sans-serif;
-/* top: 500px; */
-}
-
-*/
-/* Modal Content/Box
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-/* padding: 20px;
-    border: 1px solid #888;
-    width: 80%; */
-/* Could be more or less, depending on screen size */
-/* } */
-
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    padding: 0 20px;
+    bottom: fixed;
+    font-size: 15px;
 }
