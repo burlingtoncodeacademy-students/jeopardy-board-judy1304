@@ -110,9 +110,10 @@ p.footer {
     background: orange;
     color: white;
     font-size: 20px;
-    margin: auto;
     text-align: center;
     bottom: fixed;
-    bottom: 0px;
-    top: 500px;
+    border: #d89b20;
+    width: 50%;
+    margin: auto;
+
 }

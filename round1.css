@@ -194,4 +194,7 @@ a:hover {
     padding: 0 20px;
     bottom: fixed;
     font-size: 15px;
+    border: #d89b20;
+    width: 50%;
+    margin: auto;
 }
