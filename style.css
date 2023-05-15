@@ -79,7 +79,7 @@ a:active {
 }
 
 /* Set footer properties */
-.footer {
+p.footer {
     background: orange;
     color: white;
     padding: 0 20px;

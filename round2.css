@@ -203,13 +203,12 @@ a:active {
 
 
 /* bottom page  */
-#footer {
+.footer {
     background: orange;
     color: white;
     padding: 0 20px;
     bottom: fixed;
+    text-align: center;
+    justify-content: center;
     font-size: 15px;
-    border: #d89b20;
-    width: 50%;
-    margin: auto;
 }

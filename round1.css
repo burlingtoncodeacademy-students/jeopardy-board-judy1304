@@ -17,6 +17,7 @@
     padding: 10px 90px;
 }
 
+/* for the table */
 #game-board {
     width: 450px;
     display: grid;
@@ -59,23 +60,6 @@
     cursor: pointer;
     background-color: #d89b20;
 }
-
-
-/* For the table */
-#game-board {
-    width: 450px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 60px;
-    font-size: 35px;
-    height: 90px;
-    -ms-layout-grid: auto;
-    text-align: center;
-    border-collapse: collapse;
-    margin-left: 7rem;
-}
-
 
 .row {
     display: flex;
@@ -188,13 +172,12 @@ a:hover {
 }
 
 /* footer page  */
-#footer {
+.footer {
     background: orange;
     color: white;
     padding: 0 20px;
     bottom: fixed;
+    text-align: center;
+    justify-content: center;
     font-size: 15px;
-    border: #d89b20;
-    width: 50%;
-    margin: auto;
 }
