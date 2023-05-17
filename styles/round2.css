@@ -49,7 +49,7 @@ h3 {
     margin-left: 1rem;
 }
 
-.questions {
+.question.nature {
     background-color: #d89b20;
     width: 150px;
     height: 70px;
@@ -72,27 +72,152 @@ h3 {
 
 }
 
-.questions:hover {
+.question.animals {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.question.computers {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.question.mythology {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.question.history {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.question.general {
+    background-color: #d89b20;
+    width: 150px;
+    height: 70px;
+    background-color: rgb(71, 32, 198);
+    border-left: solid #aaa 5px;
+    border-right: solid #efb5e7 5px;
+    border-top: solid #efb5ef 5px;
+    border-bottom: solid #aaa 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+    line-height: 100px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.question.nature:hover {
     cursor: pointer;
     background-color: #d89b20;
 }
 
-
-#game-board {
-    width: 450px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 60px;
-    font-size: 35px;
-    height: 90px;
-    -ms-layout-grid: auto;
-    text-align: center;
-    border-collapse: collapse;
-    margin-left: 7rem;
+.question.animals:hover {
+    cursor: pointer;
+    background-color: #d89b20;
 }
 
-.row {
+.question.computers:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+.question.mythology:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+.question.history:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+.question.general:hover {
+    cursor: pointer;
+    background-color: #d89b20;
+}
+
+#card {
     display: flex;
     flex-direction: row;
     padding: 10px 90px;
@@ -211,4 +336,10 @@ a:active {
     text-align: center;
     justify-content: center;
     font-size: 15px;
+}
+
+p.footer {
+    background: orange;
+    color: white;
+    padding: 0 20px;
 }

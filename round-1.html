@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jeopardy</title>
-  <link rel="stylesheet" href="round1.css" />
+  <link rel="stylesheet" href="./styles/round1.css" />
 </head>
 
 <body class="header1">
@@ -17,92 +17,89 @@
   <!--create a table for jeopard game-->
   <div id="game-board">
     <!--this is for the column categories -->
-    <div id="nature-title" class="category-column">Nature</div>
-    <div id="animals-title" class="category-column">Animals</div>
-    <div id="computers-title" class="category-column">Computers</div>
-    <div id="mythology-title" class="category-column">Mythology</div>
-    <div id="history-title" class="category-column">History</div>
-    <div id="general-title" class="category-colmun">General</div>
+    <div id="data-column" class="category-column">Nature</div>
+    <div id="data-column" class="category-column">Animals</div>
+    <div id="data-column" class="category-column">Computers</div>
+    <div id="data-column" class="category-column">Mythology</div>
+    <div id="data-column" class="category-column">History</div>
+    <div id="data-column" class="category-colmun">General</div>
   </div>
 
   <!-- the rows are for the questions behind the points -->
-  <div class="row">
-    <div id="nature-list"  class="questions">200</div>
-    <div id="animals-list" class="questions">200</div>
-    <div id="computers-list" class="questions">200</div>
-    <div id="mythology-list" class="questions">200</div>
-    <div id="history-list" class="questions">200</div>
-    <div id="general-list" class="questions">200</div>
+  <div id="card">
+    <div class="question nature">200</div>
+    <div class="question animals">200</div>
+    <div class="question computers">200</div>
+    <div class="question mythology">200</div>
+    <div class="question history">200</div>
+    <div class="question general">200</div>
 
   </div>
-  <div class="row">
-    <div id="nature-list"  class="questions">400</div>
-    <div id="animals-list" class="questions">400</div>
-    <div id="computers-list" class="questions">400</div>
-    <div id="mythology-list" class="questions">400</div>
-    <div id="history-list" class="questions">400</div>
-    <div id="general-list" class="questions">400</div>
+  <div id="card">
+    <div class="question nature">400</div>
+    <div class="question animals">400</div>
+    <div class="question computers">400</div>
+    <div class="question mythology">400</div>
+    <div class="question history">400</div>
+    <div class="question general">400</div>
   </div>
-  <div class="row">
-    <div id="nature-list" class="questions">600</div>
-    <div id="animals-list" class="questions">600</div>
-    <div id="computers-list" class="questions">600</div>
-    <div id="mythology-list" class="questions">600</div>
-    <div id="history-list" class="questions">600</div>
-    <div id="general-list" class="questions">600</div>
+  <div id="card">
+    <div class="question nature">600</div>
+    <div class="question animals">600</div>
+    <div class="question computers">600</div>
+    <div class="question mythology">600</div>
+    <div class="question history">600</div>
+    <div class="question general">600</div>
   </div>
-  <div class="row">
-    <div id="nature-list" class="questions">800</div>
-    <div id="animals-list" class="questions">800</div>
-    <div id="computers-list" class="questions">800</div>
-    <div id="mythology-list" class="questions">800</div>
-    <div id="history-list" class="questions">800</div>
-    <div id="general-list" class="questions">800</div>
+  <div id="card">
+    <div class="question nature">800</div>
+    <div class="question animals">800</div>
+    <div class="question computers">800</div>
+    <div class="question mythology">800</div>
+    <div class="question history">800</div>
+    <div class="question general">800</div>
   </div>
-  <div class="row">
-    <div id="nature-list" class="questions">1000</div>
-    <div id="animals-list" class="questions">1000</div>
-    <div id="computers-list" class="questions">1000</div>
-    <div id="mythology-list"class="questions">1000</div>
-    <div id="history-list" class="questions">1000</div>
-    <div id="general-list" class="questions">1000</div>
+  <div id="card">
+    <div class="question nature">1000</div>
+    <div class="question animals">1000</div>
+    <div class="question computers">1000</div>
+    <div class="question mythology">1000</div>
+    <div class="question history">1000</div>
+    <div class="question general">1000</div>
   </div>
+
 
   <!--Input User-->
   <label for="user"></label>
   <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
 
-  <!--Button input -->
-  <section>
-    <button id="guessButton" class="guess" type="button" onclick="checkAnswer()">Guess</button>
-  
-    <button id="passButton" class="pass" type="button" onclick="pass()">Pass</button>
- 
-    
-    </div>
-    </div>
-  </section>
+  <!--Button input --> 
+  <div id="notification"></div>
 
+  <section>
+    <button id="guess-button" class="guess" type="button" disabled>Guess</button>
+
+    <button id="pass-button" class="pass" type="button" disabled>Pass</button>
 
   <!-- Points for each players to keep track of while playing each around -->
   <section>
     <p class="left">
-      Player 1 Score: 0 <span id="player1Score"></span>
+      Player 1 Score: <span id="player1Score">0</span>  
     </p>
 
   </section>
 
   <section>
     <p class="right">
-      Player 2 Score: 0 <span id="player2Score"></span>
+      Player 2 Score: <span id="player2Score">0</span>
     </p>
   </section>
 
   <!-- A click for next round to continue the game -->
   <section>
-    <nav id="round2" class="container4">
-      <a href="round-2.html">Next<br>Round</a>
-    </nav>
+    <button<nav id="next-round-button" class="container4">
+      <a href="round-2.html" disabled>Next<br>Round</a>
+    </nav></button>
   </section>
 
   <!-- This is for keeping the footer section to stay on the bottom of the page -->

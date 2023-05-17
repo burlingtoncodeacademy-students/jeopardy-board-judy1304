@@ -89,7 +89,7 @@ label {
 }
 
 /* footer on the bottom of the page */
-p.footer {
+.footer {
     background: orange;
     color: white;
     padding: 0 20px;
@@ -101,4 +101,14 @@ p.footer {
     align-items: center;
     margin-bottom: 0;
 
+}
+
+p.footer {
+    background: orange;
+    color: white;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
 }
