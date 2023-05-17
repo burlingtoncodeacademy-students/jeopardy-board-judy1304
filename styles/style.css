@@ -92,6 +92,10 @@ a:hover {
     text-align: center;
     justify-content: center;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
 }
 
 p.footer {
@@ -99,4 +103,7 @@ p.footer {
     color: white;
     padding: 0 20px;
     position: fixed;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
 }
