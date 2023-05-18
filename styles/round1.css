@@ -210,6 +210,12 @@
     padding: 10px 90px;
 }
 
+.modal {
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 0 8px;
+}
+
 h3 {
     text-align: center;
     align-items: center;

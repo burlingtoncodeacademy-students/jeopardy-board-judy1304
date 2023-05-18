@@ -27,45 +27,59 @@
 
   <!-- the rows are for the questions behind the points -->
   <div id="card">
-    <div class="question nature">200</div>
-    <div class="question animals">200</div>
-    <div class="question computers">200</div>
-    <div class="question mythology">200</div>
-    <div class="question history">200</div>
-    <div class="question general">200</div>
+    <div type="button" class="question nature">200</div>
+    <div type="button" class="question animals">200</div>
+    <div type="button" class="question computers">200</div>
+    <div type="button" class="question mythology">200</div>
+    <div type="button" class="question history">200</div>
+    <div type="button" class="question general">200</div>
 
   </div>
   <div id="card">
-    <div class="question nature">400</div>
-    <div class="question animals">400</div>
-    <div class="question computers">400</div>
-    <div class="question mythology">400</div>
-    <div class="question history">400</div>
-    <div class="question general">400</div>
+    <div type="button" class="question nature">400</div>
+    <div type="button" class="question animals">400</div>
+    <div type="button" class="question computers">400</div>
+    <div type="button" class="question mythology">400</div>
+    <div type="button" class="question history">400</div>
+    <div type="button" class="question general">400</div>
   </div>
   <div id="card">
-    <div class="question nature">600</div>
-    <div class="question animals">600</div>
-    <div class="question computers">600</div>
-    <div class="question mythology">600</div>
-    <div class="question history">600</div>
-    <div class="question general">600</div>
+    <div type="button" class="question nature">600</div>
+    <div type="button" class="question animals">600</div>
+    <div type="button" class="question computers">600</div>
+    <div type="button" class="question mythology">600</div>
+    <div type="button" class="question history">600</div>
+    <div type="button" class="question general">600</div>
   </div>
   <div id="card">
-    <div class="question nature">800</div>
-    <div class="question animals">800</div>
-    <div class="question computers">800</div>
-    <div class="question mythology">800</div>
-    <div class="question history">800</div>
-    <div class="question general">800</div>
+    <div type="button" class="question nature">800</div>
+    <div type="button" class="question animals">800</div>
+    <div type="button" class="question computers">800</div>
+    <div type="button" class="question mythology">800</div>
+    <div type="button" class="question history">800</div>
+    <div type="button" class="question general">800</div>
   </div>
   <div id="card">
-    <div class="question nature">1000</div>
-    <div class="question animals">1000</div>
-    <div class="question computers">1000</div>
-    <div class="question mythology">1000</div>
-    <div class="question history">1000</div>
-    <div class="question general">1000</div>
+    <div type="button" class="question nature">1000</div>
+    <div type="button" class="question animals">1000</div>
+    <div type="button" class="question computers">1000</div>
+    <div type="button" class="question mythology">1000</div>
+    <div type="button" class="question history">1000</div>
+    <div type="button" class="question general">1000</div>
+  </div>
+
+  <!-- Modal popup for questions -->
+  <div class="question" id="modalCenter">
+    <div calss="modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
   </div>
 
 
@@ -73,7 +87,7 @@
   <label for="user"></label>
   <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
 
-  <!--Button input --> 
+  <!--Button input -->
   <div id="notification"></div>
 
   <section>
@@ -81,36 +95,36 @@
 
     <button id="pass-button" class="pass" type="button" disabled>Pass</button>
 
-  <!-- Points for each players to keep track of while playing each around -->
-  <section>
-    <p class="left">
-      Player 1 Score: <span id="player1Score">0</span>  
-    </p>
+    <!-- Points for each players to keep track of while playing each around -->
+    <section>
+      <p class="left">
+        Player 1 Score: <span id="player1Score">0</span>
+      </p>
 
-  </section>
+    </section>
 
-  <section>
-    <p class="right">
-      Player 2 Score: <span id="player2Score">0</span>
-    </p>
-  </section>
+    <section>
+      <p class="right">
+        Player 2 Score: <span id="player2Score">0</span>
+      </p>
+    </section>
 
-  <!-- A click for next round to continue the game -->
-  <section>
-    <button<nav id="next-round-button" class="container4">
-      <a href="round-2.html" disabled>Next<br>Round</a>
-    </nav></button>
-  </section>
+    <!-- A click for next round to continue the game -->
+    <section>
+      <button<nav id="next-round-button" class="container4">
+        <a href="round-2.html" disabled>Next<br>Round</a>
+        </nav></button>
+    </section>
 
-  <!-- This is for keeping the footer section to stay on the bottom of the page -->
-  <footer>
-    <p class="footer">Jeopardy Game Show</p>
-  </footer>
+    <!-- This is for keeping the footer section to stay on the bottom of the page -->
+    <footer>
+      <p class="footer">Jeopardy Game Show</p>
+    </footer>
 
 
 
-  <!-- Do not change the script source. Allows import/export to work. -->
-  <script src="./scripts/round1.js" type="module"></script>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/round1.js" type="module"></script>
 
 </body>
 
