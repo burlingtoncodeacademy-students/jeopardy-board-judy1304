@@ -10,7 +10,7 @@
 </head>
 
 <body class="header1">
-  <h1>Round One</h1>
+  <h1>Round<span id="round1"> One</span></h1>
 
   <h3>Player Turn</h3>
 
@@ -68,63 +68,57 @@
     <div type="button" class="question general">1000</div>
   </div>
 
-  <!-- Modal popup for questions -->
-  <div class="question" id="modalCenter">
-    <div calss="modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
+  <div id="notication"></div>
+  <!-- Modal popup -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h2 id="question"></h2>
     </div>
-  </div>
 
+    <!--Input User-->
+    <label for="user"></label>
+    <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
 
-  <!--Input User-->
-  <label for="user"></label>
-  <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
-
-  <!--Button input -->
-  <div id="notification"></div>
-
-  <section>
-    <button id="guess-button" class="guess" type="button" disabled>Guess</button>
-
-    <button id="pass-button" class="pass" type="button" disabled>Pass</button>
-
-    <!-- Points for each players to keep track of while playing each around -->
-    <section>
-      <p class="left">
-        Player 1 Score: <span id="player1Score">0</span>
-      </p>
-
-    </section>
+    <!--Button input -->
+    <div id="notification"></div>
 
     <section>
-      <p class="right">
-        Player 2 Score: <span id="player2Score">0</span>
-      </p>
-    </section>
+      <button id="guess-button" class="guess" type="button" disabled>Guess</button>
 
-    <!-- A click for next round to continue the game -->
-    <section>
-      <button<nav id="next-round-button" class="container4">
-        <a href="round-2.html" disabled>Next<br>Round</a>
-        </nav></button>
-    </section>
-
-    <!-- This is for keeping the footer section to stay on the bottom of the page -->
-    <footer>
-      <p class="footer">Jeopardy Game Show</p>
-    </footer>
+      <button id="pass-button" class="pass" type="button" disabled>Pass</button>
 
 
+      <!-- Points for each players to keep track of while playing each around -->
+      <section>
+        <p class="left">
+          Player 1 Score: <span id="player1Score">0</span>
+        </p>
 
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/round1.js" type="module"></script>
+      </section>
+
+      <section>
+        <p class="right">
+          Player 2 Score: <span id="player2Score">0</span>
+        </p>
+      </section>
+
+      <!-- A click for next round to continue the game -->
+      <section>
+        <button<nav id="next-round-button" class="container4">
+          <a href="round-2.html" disabled>Next<br>Round</a>
+          </nav></button>
+      </section>
+
+      <!-- This is for keeping the footer section to stay on the bottom of the page -->
+      <footer>
+        <p class="footer">Jeopardy Game Show</p>
+      </footer>
+
+
+
+      <!-- Do not change the script source. Allows import/export to work. -->
+      <script src="./scripts/round1.js" type="module"></script>
 
 </body>
 

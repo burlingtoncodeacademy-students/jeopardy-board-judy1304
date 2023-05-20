@@ -88,7 +88,8 @@ submitAnswerBtn.addEventListener('click', () => {
         // Let the players that the answer is incorrect and subtract the wagered amount from the player's score
         alert("Incorrect.");
     }
-});
+})
+
 
 // Store the maximum wager for each player
 let maxWager = {

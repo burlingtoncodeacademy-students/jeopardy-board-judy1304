@@ -10,6 +10,16 @@
     color: white;
 }
 
+.header1 round1 {
+    background-color: blueviolet;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
 /* For display for next round */
 .container4 {
     display: flex;
@@ -210,8 +220,7 @@
     padding: 10px 90px;
 }
 
-.modal {
-    background-color: lightgray;
+#myModal {
     border-radius: 16px;
     padding: 0 8px;
 }

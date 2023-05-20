@@ -8,14 +8,12 @@ const urlParams = new URLSearchParams(window.location.search);
 const player1Score = parseInt(urlParams.get('player1Score'));
 const player2Score = parseInt(urlParams.get('player2Score'));
 
-if (currentPage === 'Round 2') {
-    // Behavior is the same as Round 1
-    // Scores are the same as they were at the end of Round 1
-
-    // Disable Final Round button
-    finalRoundButton.disabled = true;
+// Check if it is Round 2 based on the current URL 
+const isRound2 = true;
+// true if it is Round 2, otherwise false
+if (isRound2) {
+    document.getElementById("final-round-button").disabled = true;
 }
-
 // Define global variables
 let playerScores = [0, 0]; // Initialize scores for both players to 0
 let currentRound = 1;
