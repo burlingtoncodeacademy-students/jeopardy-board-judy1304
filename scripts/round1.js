@@ -44,32 +44,32 @@ function showQuestionModal() {
     questionModal.style.display = 'block';
 }
 
+let selectedQuestion = ' ';
+let currentPlayer = 1;
+let player1Score = 0;
+let player2Score = 0;
 
 // Function to handle submitting an answer
-let selectedQuestion = null;
-function theshowQuestionModal() {
-    selectedQuestion = questionDisplay.textContent.split(':')[1].trim();
-    return theshowQuestionModal
-}
-
 function checkAnswer(answer) {
     const isAnswerCorrect = answer.toLowerCase() === selectedQuestion.toLowerCase();
     return isAnswerCorrect;
 }
 
-
 // Function to handle passing a question
 function passQuestion() {
-    // Switch to the next player's turn
     currentPlayer = currentPlayer === 1 ? 2 : 1;
-    // Update the UI to display the current player's turn
     notification.textContent = `Player ${currentPlayer}'s turn to answer`;
 }
 
 // Function to update the score display on the page
 function updateScore() {
     scoreDisplay.textContent = `Player 1: ${player1Score} | Player 2: ${player2Score}`;
-
 }
 
-
+const player1Answer = '';
+if (checkAnswer(player1Answer)) {
+    player1Score++;
+    updateScore();
+} else {
+    passQuestion();
+}

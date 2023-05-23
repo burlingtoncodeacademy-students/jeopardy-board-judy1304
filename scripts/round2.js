@@ -2,11 +2,6 @@
 import placeholderQuestions from "./placeholder-questions.js";
 console.log({ placeholderQuestions });
 
-// Set initial score values for players 1 and 2
-// Get scores from query parameters
-const urlParams = new URLSearchParams(window.location.search);
-const player1Score = parseInt(urlParams.get('player1Score'));
-const player2Score = parseInt(urlParams.get('player2Score'));
 
 // Check if it is Round 2 based on the current URL 
 const isRound2 = true;
@@ -16,7 +11,6 @@ if (isRound2) {
 }
 // Define global variables
 let playerScores = [0, 0]; // Initialize scores for both players to 0
-let currentRound = 1;
 const maxRound1 = 15000;
 const maxRound2 = 30000;
 

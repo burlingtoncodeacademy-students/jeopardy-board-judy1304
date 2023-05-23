@@ -52,7 +52,6 @@ function submitWager() {
 
 // Get the elements needed for the final round
 const categoryElement = document.getElementById('category');
-const wagerInput = document.getElementById('wager');
 const submitWagerBtn = document.getElementById('submit-wager');
 const questionElement = document.getElementById('question');
 const submitAnswerBtn = document.getElementById('submit-answer');
