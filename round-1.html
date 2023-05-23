@@ -68,14 +68,15 @@
     <div type="button" class="question general">1000</div>
   </div>
 
-  <div id="notication"></div>
-  <!-- Modal popup -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <h2 id="question"></h2>
+  <!-- Show Modal for questions -->
+  <div id="questionModal" class="modal">
+    <div id="questionModalContent" class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="questionDisplay"></div>
+      <button id="answerButton">Submit Answer</button>
     </div>
-
+  </div>
+  
     <!--Input User-->
     <label for="user"></label>
     <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
