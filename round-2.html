@@ -1,15 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeopardy</title>
-    <script src="./scripts/index.js" type="module"></script>
-  </head>
-  <body>
-    <h1>Second Round</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeopardy</title>
+  <link rel="stylesheet" href="./styles/round2.css" />
+</head>
+
+<body class="header1">
+  <h1>Round Two</h1>
+
+  <h3>Player Turn</h3>
+
+  <!--create a table for jeopard game-->
+  <div id="game-board">
+    <!--this is for the column categories -->
+    <div id="nature-title" class="category-column">Nature</div>
+    <div id="animals-title" class="category-column">Animals</div>
+    <div id="computers-title" class="category-column">Computers</div>
+    <div id="mythology-title" class="category-colmun">Mythology</div>
+    <div id="history-title" class="category-column">History</div>
+    <div id="general-title" class="category-colmun">General</div>
+  </div>
+
+  <!-- the rows are for the questions behind the points -->
+  <div id="card">
+    <div class="question nature">400</div>
+    <div class="question animals">400</div>
+    <div class="question computers">400</div>
+    <div class="question mythology">400</div>
+    <div class="question history">400</div>
+    <div class="question general">400</div>
+
+  </div>
+  <div id="card">
+    <div class="question nature">800</div>
+    <div class="question animals">800</div>
+    <div class="question computers">800</div>
+    <div class="question mythology">800</div>
+    <div class="question history">800</div>
+    <div class="question general">800</div>
+  </div>
+  <div id="card">
+    <div class="question nature">1200</div>
+    <div class="question animals">1200</div>
+    <div class="question computers">1200</div>
+    <div class="question mythology">1200</div>
+    <div class="question history">1200</div>
+    <div class="question general">1200</div>
+  </div>
+  <div id="card">
+    <div class="question nature">1600</div>
+    <div class="question animals">1600</div>
+    <div class="question computers">1600</div>
+    <div class="question mythology">1600</div>
+    <div class="question history">1600</div>
+    <div class="question general">1600</div>
+  </div>
+  <div id="card">
+    <div class="question nature">2000</div>
+    <div class="question nature">2000</div>
+    <div class="question nature">2000</div>
+    <div class="question nature">2000</div>
+    <div class="question nature">2000</div>
+    <div class="question nature">2000</div>
+  </div>
+
+ 
+  <!--Input User-->
+  <label for="user"></label>
+  <input type="text" id="answer" class="search-answer" placeholder="Enter your answer">
+
+  <!--Button input -->
+  <section>
+    <button id="guessButton" class="guess" type="button" onclick="checkAnswer()">Guess</button>
+  
+    <button id="passButton" class="pass" type="button" onclick="pass()">Pass</button>
+ 
+    
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Points for each players to keep track of while playing each around -->
+  <section>
+    <p class="left">
+      Player 1 Score: 0 <span id="player1Score"></span>
+    </p>
+
+  </section>
+
+  <section>
+    <p class="right">
+      Player 2 Score: 0 <span id="player2Score"></span>
+    </p>
+  </section>
+
+  <!-- A click for next round to continue the game -->
+  <div>
+    <nav id="final-round-button" class="container4">
+      <a href="final-jeopardy.html">Final<br>Round</a>
+    </nav>
+  </div>
+
+  <!-- This is for keeping the footer section to stay on the bottom of the page -->
+  <footer>
+    <p class="footer">Jeopardy Game Show</p>
+  </footer>
+
+
+
+  <!-- Do not change the script source. Allows import/export to work. -->
+  <script src="./scripts/round2.js" type="module"></script>
+
+
+</body>
+
 </html>
